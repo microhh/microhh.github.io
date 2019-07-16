@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+          #map {
+            width: 700px;
+            height: 300px;
+          }
+        </style>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="MicroHH: a CFD code for the simulation of turbulent flows in the atmospheric boundary layer">
+        <meta name="author" content="MicroHH development team">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <title>MicroHH</title>
+    </head>
+  
+    <body>
+
+    <a href="https://github.com/microhh"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+ 
+        <!-- 
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">MicroHH</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#pubs">Publications</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Links <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-header">MicroHH links:</li>
+                                <li><a href="http://github.com/microhh/microhh">Github</a></li>
+                                <li><a href="https://github.com/microhh/microhh/issues">Bug tracker</a></li>
+                                <li><a href="https://vimeo.com/channels/817195">Vimeo channel</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Other:</li>
+                                <li><a href="#">Blank</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        -->
+  
+        <!--<img class="img-responsive" src="back_wide.png"/>-->
+
+        <div class="container">
+
+             <!--<h1><a href="index.html">MicroHH</a></h1>-->
+             <h1><img src='microhh_logo_blue.png' height="55px"></h1>
+             <p class="lead">For the simulation of turbulent flows in the atmosphere</p>
+
+             <div class="row">
+                 <div class="col-md-8">
+                     <a name="about"></a>
+                     <h3>About</h3>
+                     <p>MicroHH is a computational fluid dynamics code made for Direct Numerical Simulation (DNS) and Large-Eddy Simulation (LES) of turbulent flows in the atmosphere. The code is written in C++.</p>
+                     <p>MicroHH is hosted on GitHub. There, the latest version of the source code can be found, as well as all releases, a bug tracker, and wiki pages to help you get started. In case of any questions, please contact Chiel van Heerwaarden (chielvanheerwaarden at gmail.com).</p>
+                     <p>MicroHH is described in detail in <a href="https://www.geosci-model-dev.net/10/3145/2017/">van Heerwaarden et al. (2017)</a>. In case you decide to use MicroHH for your own research, the developers would appreciate to be notified and kindly request to cite their reference paper.</p>
+                     <p>
+                         <a href="http://github.com/microhh/microhh" class="btn btn-success btn-sm" role="button">View the code at Github &raquo;</a>
+                         <a href="https://github.com/microhh/microhh/issues" class="btn btn-success btn-sm" role="button">Bug tracker &raquo;</a>
+                         <a href="https://github.com/microhh/microhh/wiki" class="btn btn-success btn-sm" role="button">Wiki pages &raquo;</a>
+                     </p>
+                 </div>
+                 <div class="col-md-4">
+                     <a name="news"></a> 
+                     <h3>News</h3>
+                     <!--<div class="alert alert-danger" role="alert">08-05-2015: Example of what might be a critical bug &raquo; <a class="alert-link" href="https://github.com/microhh/microhh/issues/16">view bug</a></div>-->
+                     <div class="alert alert-success" role="alert">28-08-2017: Reference paper is <a href="https://www.geosci-model-dev.net/10/3145/2017/">published!</a>.</div>
+                     <div class="alert alert-success" role="alert">21-03-2017: Reference paper is <a href="http://dx.doi.org/10.5194/gmd-2017-41">under review</a>.</div>
+                     <div class="alert alert-success" role="alert">27-05-2015: Added animation gallery</div>
+                     <div class="alert alert-success" role="alert">13-05-2015: V0.1 of the website online!</div>
+                 </div>
+             </div>
+
+             <div class="row">
+                 <div class="col-md-12">
+                     <h3>Animations</h3>
+                     <p>From time to time we post animations in our <a href="https://vimeo.com/channels/microhh">Vimeo channel</a>. The HD versions can be watched at the Vimeo website.</p>
+                     <p><a href="https://vimeo.com/channels/microhh" class="btn btn-success btn-sm" role="button">View all animations on Vimeo &raquo;</a></p>
+                 </div>
+                 <div class="col-md-4">
+                     <iframe src="https://player.vimeo.com/video/289326996" width="300" height="170" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                 </div>
+                 <div class="col-md-4">
+                     <iframe src="https://player.vimeo.com/video/123823325" width="300" height="170" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+                 </div>
+                 <div class="col-md-4">
+                     <iframe src="https://player.vimeo.com/video/84675235" width="300" height="170" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                 </div>
+             </div>
+
+             <h3>MicroHH activity map</h3>
+             <center>
+                 <div id="map"></div>
+                     <script>
+                         function initMap() {
+                           var mapDiv = document.getElementById('map');
+                           var map = new google.maps.Map(mapDiv, {
+                             center: {lat: 51., lng: -40},
+                             zoom: 2
+                           });
+
+                           var marker = new google.maps.Marker({
+                             position: {lat: 51.987600, lng: 5.667009},
+                             map: map,
+                             title: 'Wageningen University and Research Center'
+                           });
+
+                           var marker = new google.maps.Marker({
+                             position: {lat: 41.502310, lng: -81.675335},
+                             map: map,
+                             title: 'Department of Physics, Cleveland State University'
+                           });
+
+                           var marker = new google.maps.Marker({
+                             position: {lat: 53.567733, lng: 9.975157},
+                             map: map,
+                             title: 'Max Planck Institute for Meteorology'
+                           });
+
+                           var marker = new google.maps.Marker({
+                             position: {lat: 51.438801, lng: -0.936912},
+                             map: map,
+                             title: 'Department of Meteorology, University of Reading'
+                           });
+
+                           var marker = new google.maps.Marker({
+                             position: {lat: 50.173703, lng: 8.634342},
+                             map: map,
+                             title: 'Institute for Atmospheric and Environmental Sciences, Goethe University Frankfurt'
+                           });
+
+                           var marker = new google.maps.Marker({
+                             position: {lat: 35.181613, lng: -97.440094},
+                             map: map,
+                             title: 'The School of Meteorology at the University of Oklahoma'
+                           });
+
+                           var marker = new google.maps.Marker({
+                             position: {lat: 40.767366, lng: -111.847761},
+                             map: map,
+                                  title: 'Department of Mechanical Engineering at the University of Utah'
+                                });
+
+                           var marker = new google.maps.Marker({
+                             position: {lat: 51.447725, lng: 5.492118},
+                             map: map,
+                             title: 'Department of Applied Physics, Eindhoven University of Technology'
+                           });
+
+                           var marker = new google.maps.Marker({
+                             position: {lat: 42.378741, lng: -71.115674},
+                             map: map,
+                             title: 'Harvard University, Center for the Environment'
+                           });
+
+                           var marker = new google.maps.Marker({
+                             position: {lat: 51.998808, lng: 4.375574},
+                             map: map,
+                             title: 'Faculty of Civil Engineering and Geosciences, Delft University of Technology'
+                           });
+
+                           var marker = new google.maps.Marker({
+                             position: {lat: 40.809400, lng: -73.959867},
+                             map: map,
+                             title: 'Department of Earth and Environmental Engineering, Columbia University'
+                           });
+
+                           var marker = new google.maps.Marker({
+                             position: {lat: 52.087, lng: 5.166},
+                             map: map,
+                             title: 'Institute for Marine and Atmospheric Research (IMAU) | Utrecht University'
+                           });
+
+                           var marker = new google.maps.Marker({
+                             position: {lat: 32.23, lng: -110.95},
+                             map: map,
+                             title: 'Department of Hydrology & Atmospheric Sciences, University of Arizona'
+                           });
+
+                         }
+                     </script>
+                     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK-HqNop9PaPcMC8WjPB58-Dzd3plc6Qg&callback=initMap" async defer></script> 
+             </center>
+
+             <h3>Publications using MicroHH</h3>
+             <ul class="list-unstyled">
+
+<li><h4>Reference</h4></li>
+<ul>
+    <li>C.C. van Heerwaarden, B.J.H. van Stratum, T. Heus, J. Gibbs, E. Fedorovich, J.P. Mellado (2017): MicroHH 1.0: a computational fluid dynamics code for direct numerical simulation and large-eddy simulation of atmospheric boundary layer flows. <i>Geosci. Model Dev.</i>, 10(8), 3145-3165 (<a href="https://doi.org/10.5194/gmd-10-3145-2017">10.5194/gmd-10-3145-2017</a>)</li>
+</ul>
+<li><h4>2019</h4></li>
+<ul>
+    <li>S.J.A. van der Linden, J.M. Edwards, C.C. van Heerwaarden, E. Vignon, C. Genthon, I. Petenko, P. Baas, H.J.J. Jonker, B.J.H. van de Wiel (2019): Large-Eddy Simulations of the Steady Wintertime Antarctic Boundary Layer. <i>Boundary Layer Meteorol.</i>,  (<a href="https://doi.org/10.1007/s10546-019-00461-4">10.1007/s10546-019-00461-4</a>)</li>
+</ul>
+<li><h4>2018</h4></li>
+<ul>
+    <li>P.J.M. Bosman,  C.C. van Heerwaarden,  A.J. Teuling (2018): Sensible heating as a potential mechanism for enhanced cloud formation over temperate forest. <i>Q.J.R. Meteorol. Soc.</i>,  (<a href="https://doi.org/10.1002/qj.3441">10.1002/qj.3441</a>)</li>
+    <li>I.G. van Hooijdonk, H.J. Clercx, C. Ansorge, A.F. Moene, B.J.H. van de Wiel (2018): Parameters for the collapse of turbulence in the stratified plane Couette flow. <i>J. Atmos. Sci.</i>, 75(9), 3211-3231 (<a href="https://doi.org/10.1175/JAS-D-17-0335.1">10.1175/JAS-D-17-0335.1</a>)</li>
+    <li>I. Bašták Ďurán, J.F. Geleyn, F. Váňa, J. Schmidli, R. Brožková (2018): A Turbulence Scheme with Two Prognostic Turbulence Energies. <i>J. Atmos. Sci.</i>, 75(10), 3381-3402 (<a href="https://doi.org/10.1175/JAS-D-18-0026.1">10.1175/JAS-D-18-0026.1</a>)</li>
+    <li>J.A. van Hooft, S. Popinet, C.C. van Heerwaarden, S.J.A. van der Linden, S.R. de Roode, B.J.H. van de Wiel (2018): Towards Adaptive Grids for Atmospheric Boundary-Layer Simulations. <i>Boundary-Layer Meteorol.</i>, 167(3), 421-433 (<a href="https://doi.org/10.1007/s10546-018-0335-9">10.1007/s10546-018-0335-9</a>)</li>
+</ul>
+<li><h4>2017</h4></li>
+<ul>
+    <li>E. Fedorovich,, J.A. Gibbs, A. Shapiro (2017): Numerical study of nocturnal low-level jets over gently sloping terrain. <i>J. Atmos. Sci.</i>, 74(9), 2813-2834 (<a href="https://doi.org/10.1175/JAS-D-17-0013.1">10.1175/JAS-D-17-0013.1</a>)</li>
+    <li>K.A. McColl, C.C. van Heerwaarden, G.G. Katul, P. Gentine, D. Entekhabi (2017): Role of large eddies in the break- down of the Reynolds analogy in an idealized mildly unstable atmospheric surface layer. <i>Q.J.R. Meteorol. Soc.</i>, 143(706), 2182-2197 (<a href="https://doi.org/10.1002/qj.3077">10.1002/qj.3077</a>)</li>
+</ul>
+<li><h4>2016</h4></li>
+<ul>
+    <li>C.C. van Heerwaarden, J.P. Mellado (2016): Growth and Decay of a Convective Boundary Layer over a Surface with a Constant Temperature. <i>J. Atmos. Sci.</i>, 73(5), 2165-2177 (<a href="https://doi.org/10.1175/JAS-D-15-0315.1">10.1175/JAS-D-15-0315.1</a>)</li>
+</ul>
+<li><h4>2015</h4></li>
+<ul>
+    <li>P. Gentine, G. Bellon, and C.C van Heerwaarden (2015): A Closer Look at Boundary Layer Inversion in Large-Eddy Simulations and Bulk Models: Buoyancy-Driven Case. <i>J. Atmos. Sci.</i>, 72(2), 728-749 (<a href="https://doi.org/10.1175/JAS-D-13-0377.1">10.1175/JAS-D-13-0377.1</a>)</li>
+</ul>
+<li><h4>2014</h4></li>
+<ul>
+    <li>C.C. van Heerwaarden, J.P. Mellado, A. De Lozar (2014): Scaling Laws for the Heterogeneously Heated Free Convective Boundary Layer. <i>J. Atmos. Sci.</i>, 71(11), 3975-4000 (<a href="https://doi.org/10.1175/JAS-D-13-0383.1">10.1175/JAS-D-13-0383.1</a>)</li>
+</ul>
+
+
+
+
+
+             </ul>
+  
+        </div>
+  
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>

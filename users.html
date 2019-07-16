@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+          #map {
+            width: 1000px;
+            height: 500px;
+          }
+        </style>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="MicroHH: a CFD code for the simulation of turbulent flows in the atmospheric boundary layer">
+        <meta name="author" content="MicroHH development team">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <title>MicroHH</title>
+    </head>
+  
+    <body>
+        <div class="container">
+             <h1>MicroHH</h1>
+             <p class="lead">For the simulation of turbulent flows in the atmospheric boundary layer</p>
+
+             <p>Map of current (and recent) users. Last update: March 2017.</p>
+
+             <div class="row">
+                 <div class="col-md-12">
+
+                      <div id="map"></div>
+                        <script>
+                          function initMap() {
+                            var mapDiv = document.getElementById('map');
+                            var map = new google.maps.Map(mapDiv, {
+                              center: {lat: 51., lng: 4},
+                              zoom: 2
+                            });
+                                
+                            var marker = new google.maps.Marker({
+                              position: {lat: 51.987600, lng: 5.667009},
+                              map: map,
+                              title: 'Wageningen University and Research Center'
+                            });
+
+                            var marker = new google.maps.Marker({
+                              position: {lat: 41.502310, lng: -81.675335},
+                              map: map,
+                              title: 'Department of Physics, Cleveland State University'
+                            });
+
+                            var marker = new google.maps.Marker({
+                              position: {lat: 53.567733, lng: 9.975157},
+                              map: map,
+                              title: 'Max Planck Institute for Meteorology'
+                            });
+
+                            var marker = new google.maps.Marker({
+                              position: {lat: 51.438801, lng: -0.936912},
+                              map: map,
+                              title: 'Department of Meteorology, University of Reading'
+                            });
+
+                            var marker = new google.maps.Marker({
+                              position: {lat: 50.173703, lng: 8.634342},
+                              map: map,
+                              title: 'Institute for Atmospheric and Environmental Sciences, Goethe University Frankfurt'
+                            });
+
+                            var marker = new google.maps.Marker({
+                              position: {lat: 35.181613, lng: -97.440094},
+                              map: map,
+                              title: 'The School of Meteorology at the University of Oklahoma'
+                            });
+
+                            var marker = new google.maps.Marker({
+                              position: {lat: 40.767366, lng: -111.847761},
+                              map: map,
+                              title: 'Department of Mechanical Engineering at the University of Utah'
+                            });
+
+                            var marker = new google.maps.Marker({
+                              position: {lat: 51.447725, lng: 5.492118},
+                              map: map,
+                              title: 'Department of Applied Physics, Eindhoven University of Technology'
+                            });
+
+                          }
+                        </script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK-HqNop9PaPcMC8WjPB58-Dzd3plc6Qg&callback=initMap" async defer></script> 
+
+
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+                        
+
+
+                 </div>
+             </div>
+
+  
+        </div>
+  
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
