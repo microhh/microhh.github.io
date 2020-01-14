@@ -33,6 +33,14 @@ reference = {
     }
 
 papers = {
+    'osman2019': Pub('Validating the water vapor variance similarity relationship in the interfacial layer using observations and large‐eddy simulations',
+        'M.K. Osman, D.D. Turner, T. Heus, V. Wulfmeyer',
+        journals['jgra'], 2019, '124, 10,662–10,675', '10.1029/2019JD030653'),
+
+    'neggers2019': Pub('Power-Law Scaling in the Internal Variability of Cumulus Cloud Size Distributions due to Subsampling and Spatial Organization',
+        'R.A.J. Neggers, P.J. Griewank, T. Heus',
+        journals['jas'], 2019, '124, 76(6), 1489-1503', '10.1175/JAS-D-18-0194.1'),
+
     'anurose2019': Pub('Understanding the Moisture Variance in Precipitating Shallow Cumulus Convection',
         'T.J. Anurose, I. Bašták Ďurán, J. Schmidli, A. Seifert',
         journals['jgra'], 2019, '', '10.1029/2019JD031178'),
