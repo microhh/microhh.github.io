@@ -46,7 +46,7 @@ papers = {
         journals['jas'], 2019, '124, 76(6), 1489-1503', '10.1175/JAS-D-18-0194.1'),
 
     'mol2019': Pub('Surface Moisture Exchange Under Vanishing Wind in Simulations of Idealized Tropical Convection',
-        'W.B. Mol  C.C. van Heerwaarden, L. Schlemmer',
+        'W.B. Mol,  C.C. van Heerwaarden, L. Schlemmer',
         journals['blm'], 2019, '46(22), 13602-13609', '10.1029/2019GL085047'),
 
     'linden2019': Pub('Large-Eddy Simulations of the Steady Wintertime Antarctic Boundary Layer',
