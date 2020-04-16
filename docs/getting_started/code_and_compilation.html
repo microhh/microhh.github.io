@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,12 +11,18 @@
   
 
   
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,13 +34,10 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Running first case" href="running_first_case.html" /> 
+    <link rel="next" title="Running first case" href="running_first_case.html" />
+    <link rel="prev" title="MicroHH documentation" href="../index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -49,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> MicroHH
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> MicroHH
           
 
           
@@ -72,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -79,9 +82,8 @@
               
             
             
-              <p class="caption"><span class="caption-text">First steps:</span></p>
+              <p class="caption"><span class="caption-text">Getting started:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Code and compilation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#obtaining-the-microhh-code">Obtaining the MicroHH code</a></li>
@@ -89,11 +91,18 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="running_first_case.html">Running first case</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_statistics.html">Merging statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_binaries.html">Converting binaries</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The code:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../the_code/main_code_structure.html">Main code structure</a></li>
 </ul>
 
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -132,7 +141,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Code and compilation</li>
     
@@ -232,6 +241,8 @@ cmake .. -DUSECUDA<span class="o">=</span>TRUE
         <a href="running_first_case.html" class="btn btn-neutral float-right" title="Running first case" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
+        <a href="../index.html" class="btn btn-neutral float-left" title="MicroHH documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
   
 
@@ -239,11 +250,14 @@ cmake .. -DUSECUDA<span class="o">=</span>TRUE
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, MicroHH developers
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -254,7 +268,6 @@ cmake .. -DUSECUDA<span class="o">=</span>TRUE
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
