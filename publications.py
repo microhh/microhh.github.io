@@ -22,7 +22,8 @@ journals = {
         'gmd': 'Geosci. Model Dev.',
         'blm': 'Boundary Layer Meteorol.',
         'qjr': 'Q.J.R. Meteorol. Soc.',
-        'jgra': 'J. Geophys. Res. Atmos.'
+        'jgra': 'J. Geophys. Res. Atmos.',
+        'atmos': 'Atmosphere'
         }
 
 
@@ -33,6 +34,14 @@ reference = {
     }
 
 papers = {
+    'sulak2020': Pub('The Contributions of Shear and Turbulence to Cloud Overlap for Cumulus Clouds',
+        'A. Sulak, W. Calabrese, S.D. Ryan, T. Heus',
+        journals['jgra'], 2020, '', '10.1029/2019JD032017'),
+
+    'duran2020': Pub('A Budget-Based Turbulence Length Scale Diagnostic',
+        'I. Bašták Ďurán, J. Schmidli, R. Bhattacharya',
+        journals['atmos'], 2020, '', '10.3390/atmos11040425'),
+
     'anurose2020': Pub('Understanding the Moisture Variance in Precipitating Shallow Cumulus Convection',
         'T.J. Anurose, I. Bašták Ďurán, J. Schmidli, A. Seifert',
         journals['jgra'], 2020, '', '10.1029/2019JD031178'),
